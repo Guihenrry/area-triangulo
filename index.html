@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Area Triangulo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Area do Triangulo</h1>
+		<label for="base">Base:</label>
+		<input type="number" min="0" id="base">
+		<label for="alt">Altura:</label>
+		<input type="number" min="0" id="alt">
+		<button onclick="area()">Calcular</button>
+		<div class="resultado"></div>
+	</div>
+	<script>
+		function area(){
+			// pegar os valores da base e altura
+			var base = document.querySelector('#base').value,
+				altura = document.querySelector('#alt').value;
+
+			// calcular a area 
+			var area = (base * altura) / 2;
+
+			// mostrar area na tela 
+			var tela = document.querySelector('.resultado');
+				tela.innerHTML = area;
+		}
+	</script>
+</body>
+</html>

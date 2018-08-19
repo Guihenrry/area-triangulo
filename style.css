@@ -1,0 +1,57 @@
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	box-sizing: border-box;
+	outline: none;
+	font-family: sans-serif;
+}
+
+/* Container */
+.container {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 30px 20px;
+	max-width: 600px;
+}
+
+/* Titulo */
+.container h1 {
+	margin: 20px 0 20px 0;
+	text-align: center;
+	color: #848484;
+	font-size: 1.5rem;
+}
+
+/* Inputs */
+.container label {
+	color: #848484;
+	margin-bottom: 1px;
+}
+
+.container input {
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+/* Botão Calcular */
+.container button {
+	color: #fff;
+	border: none;
+	background-color: #848484;
+	padding: 5px;
+}
+
+.container button:hover {
+	background-color: #585858;
+}
+
+/* Resultado */
+.resultado {
+	color: #585858;
+	font-size: 2rem;
+	padding: 10px;
+	text-align: center;
+}
